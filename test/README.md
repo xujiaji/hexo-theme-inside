@@ -20,7 +20,7 @@ npm test
 :---------|:--------
 utils     | 100%
 tag       | 100%
-helper    | 1000%
+helper    | 100%
 filter    | 100%
 generator | 0%
 layout    | 0%
