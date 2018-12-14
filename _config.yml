@@ -4,25 +4,25 @@ theme:
   # cdn for theme statics
   # cdn:
   # body background
-  # background:
+  background: confectionary.png
   # sidebar background
-  # sidebar_background:
+  sidebar_background: shattered-island.png
   # maximum width of content
-  # content_width: 640
+  content_width: 680
 
 # Sidebar menu
 # Mostly for your pages
 menu:
   Home: /
-  # About: /about
-  # Links: /links
+  About: /about
+  Links: /links
 
 # Profile
 profile:
-  avatar: /avatar.jpg
+  # avatar: /avatar.jpg
   # Email address will be used for showing gravatar(https://en.gravatar.com) avatar if `avatar` is not specified.
-  email: example@mail.com
-  bio: Awesome guy.
+  email: jiajixu@qq.com
+  bio: your future starts right here, right now, not tomorrow
 
 # Social media
 # Try to sort by changing the order of the keys
@@ -31,7 +31,7 @@ sns:
   email:
   # `feed` will fallback to `feed.path` of site if not specified
   feed:
-  github:
+  github: https://github.com/xujiaji
   twitter:
   facebook:
   google+:
@@ -46,11 +46,11 @@ sns:
   soundcloud:
   myspace:
   weibo:
-  qq:
+  qq: 624719201
 
 footer:
   # If not defined, will show current year and author, eg: ©2018 • Superman.
-  copyright:
+  copyright: ©2018 👀 xujiaji
 
   # Set to false to hide Hexo link.
   powered: true
@@ -66,9 +66,9 @@ post:
   # Table of content, enabled by default, set to false to disable.
   toc:
     # The depth of toc, default is 2, maximum to 4.
-    # depth: 3
+    depth: 4
     # Showing index before toc, eg. 1.1 title
-    # index: true
+    index: true
   # Show reward panel
   # reward: true
   # Copyright notice
@@ -114,11 +114,11 @@ category:
 # Disqus comments
 comments:
   # disqus:
-    # shortname: your_disqus_shortname
+    shortname: xujiaji
     # Or you can set disqus script directly
     # script: //your_disqus_shortname.disqus.com/embed.js
     # Default is true, set to false will show a button
-    # autoload: false
+    autoload: false
   # livere:
     # uid: your_livere_uid
     # LiveRe script, default is https://cdn-city.livere.com/js/embed.dist.js
@@ -169,25 +169,25 @@ pwa:
     #     strategy: cacheFirst
     #     regex: your_api_prefix/.*\\.json
 
-  manifest:
-    # short_name:
-    # name:
-    # start_url: /
-    # theme_color: '#2a2b33'
-    # background_color: '#2a2b33'
-    # icons:
-    #   - src: icon-194x194.png
-    #     sizes: 194x194 512x512
-    #     type: image/png
-    #   - src: icon-144x144.png
-    #     sizes: 144x144
-    #     type: image/png
+manifest:
+  short_name: XBlog
+  name: 徐佳吉的博客
+  start_url: /
+  theme_color: '#ffffcc'
+  background_color: '#ffffcc'
+  icons:
+    - src: image/icon-194x194.png
+      sizes: 194x194 512x512
+      type: image/png
+    - src: image/icon-144x144.png
+      sizes: 144x144
+      type: image/png
 
 # SEO
 seo:
   # Render structured-data
   # Disabled by default, set to true to enable
-  # structured_data: true
+  structured_data: true
 
 # Reward
 reward:
@@ -218,4 +218,4 @@ reward:
   #     text:
 
 # Google analytics
-# ga: UA-00000000-0
+ga: UA-117088783-1
