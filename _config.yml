@@ -59,6 +59,7 @@ footer:
 
   # Custom text can be defined here.
   # custom: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a>
+  custom: (｡･∀･)ﾉﾞ
 
 # Post
 post:
@@ -70,23 +71,23 @@ post:
     # Showing index before toc, eg. 1.1 title
     index: true
   # Show reward panel
-  # reward: true
+  reward: true
   # Copyright notice
   # Disabled by default, remove the hash to enable
   # You can also use front matter `copyright` to override this setting.
-  # copyright:
+  copyright:
     # Global enable, true by default
-    # global: true
+    global: true
     # Show author, false by default
-    # author: true
+    author: true
     # Show post link, true by default
-    # link: false
-    # license: Attribution-NonCommercial-NoDerivatives 4.0 International
-    #   (<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" rel=\"external nofollow noopener\" target=\"_blank\">CC BY-NC-ND 4.0</a>)
+    link: true
+    license: 自由转载-非商用-禁止演绎-保持署名
+      (<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" rel=\"external nofollow noopener\" target=\"_blank\">CC BY-NC-ND 4.0</a>)
     # Show post date, true by default
     # published: false
     # Show post update date, false by default
-    # updated: false
+    updated: true
     # Totally custom copyright
     # custom: my copyright
 
@@ -114,15 +115,15 @@ category:
 # Disqus comments
 comments:
   # disqus:
-    shortname: xujiaji
+    # shortname: xujiaji
     # Or you can set disqus script directly
     # script: //your_disqus_shortname.disqus.com/embed.js
     # Default is true, set to false will show a button
-    autoload: false
-  # livere:
-    # uid: your_livere_uid
+    # autoload: false
+  livere:
+    uid: MTAyMC80MTc5MS8xODMzNw
     # LiveRe script, default is https://cdn-city.livere.com/js/embed.dist.js
-    # script:
+    script: https://cdn-city.livere.com/js/embed.dist.js
     # Default is true, set to false will show a button
     # autoload: false
 
@@ -192,22 +193,22 @@ seo:
 # Reward
 reward:
   # Text which shows at the top.
-  # text: Buy me a cup of coffee ☕.
+  text: Buy me a cup of tea 🍵. ︿(￣︶￣)︿
 
   # Payment Methods
   #  `qrcode`: url of the qrcode images, optional
   #  `url`: link of the payment, optional
   #  `text`: text of the url, url will be displayed as default
   # You must set either a qrcode or a url
-  # methods:
-  #   - name: wechat
-  #     qrcode:
-  #     url:
-  #     text:
-  #   - name: alipay
-  #     qrcode:
-  #     url:
-  #     text:
+  methods:
+    - name: wechat
+      qrcode: https://raw.githubusercontent.com/xujiaji/xujiaji.github.io/pictures/blog/pay/payme_by_weixin.png
+      url:
+      text:
+    - name: alipay
+      qrcode: https://raw.githubusercontent.com/xujiaji/xujiaji.github.io/pictures/blog/pay/payme_by_alipay.png
+      url: https://qr.alipay.com/fkx06348pd0xuzagubxd91e
+      text: Click Me
   #   - name: paypal
   #     qrcode:
   #     url:
