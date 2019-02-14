@@ -2,7 +2,7 @@
 
 [![build-img]]() [![release-img]][releases] [![license-img]](LICENSE)
 
-A SPA, flat and clean theme for [Hexo] ❤️.
+❤️ SPA, flat and clean theme for [Hexo].
 
 [中文文档](README_zh-Hans.md)
 
@@ -22,6 +22,7 @@ A SPA, flat and clean theme for [Hexo] ❤️.
 ## Features
 
 - SPA built with [angular]
+- Custom accent color, background
 - Sub-page routes
 - Internationalization (i18n)
   - :cn: Simplified Chinese & Traditional Chinese
@@ -30,17 +31,15 @@ A SPA, flat and clean theme for [Hexo] ❤️.
 - Comments
   - [Disqus]
   - [LiveRe]
-- Rich SNS icons
-- Avatar
-- Article image CDN
-- Enhanced article display
+  - Support most comment systems as plugin
+- Content image CDN
+- Enhanced content display
   - Thumbnail
   - Dropcap
+  - Zoomable images
   - Optimized table display (headless table, long table)
-  - Executable `<script>` tag
-    - Pre-processing with babelify and uglify (optional)
   - Table of content
-  - License notice
+  - Copyright notice
   - Reward
 - [PWA]
   - Dynamically updated `theme-color` meta tag (by extracting thumbnail pixel values)
@@ -51,7 +50,6 @@ A SPA, flat and clean theme for [Hexo] ❤️.
   - built-in `sitemap.xml`
   - [Structured Data]
   - Open Graph Meta Tags
-- Google Analytics
 
 ## Quick start
 
@@ -81,7 +79,7 @@ permalink: post/:title/
 
 Licensed under [MIT](LICENSE).
 
-[build-img]: https://img.shields.io/travis-ci/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
+[build-img]: https://img.shields.io/travis/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
 [release-img]: https://img.shields.io/github/release/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
 [license-img]: https://img.shields.io/github/license/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
 

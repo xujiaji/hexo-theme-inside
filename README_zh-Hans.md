@@ -2,7 +2,7 @@
 
 [![build-img]]() [![release-img]][releases] [![license-img]](LICENSE)
 
-A SPA, flat and clean theme for [Hexo] ❤️.
+❤️ SPA, flat and clean theme for [Hexo].
 
 ## Summary
 
@@ -21,6 +21,7 @@ A SPA, flat and clean theme for [Hexo] ❤️.
 ## 特色
 
 - SPA built with [angular]
+- 自定义色调、背景
 - 可嵌套的 page 路由
 - 多语言 (i18n)
   - :cn: Simplified Chinese & Traditional Chinese
@@ -29,18 +30,16 @@ A SPA, flat and clean theme for [Hexo] ❤️.
 - 评论
   - [Disqus]
   - [LiveRe]
-- 丰富的社交媒体图标
-- 头像
+  - 以插件的形式支持大多数评论系统
 - 文章图片 CDN 设置
 - 增强的文章展示
   - 缩略图
   - 首字下沉
+  - 文章图片点击放大
   - 优化的 table 展示（无头表格、长表格）
-  - 可执行的 `<script>` 标签
-    - 可选的 babelify、uglify 预处理
   - 目录
   - 版权声明
-  - Reward
+  - 打赏
 - [PWA]
   - 动态更新的 `theme-color` meta 标签（通过提取缩略图像素值）
   - [manifest.json]
@@ -50,7 +49,6 @@ A SPA, flat and clean theme for [Hexo] ❤️.
   - 内置 `sitemap.xml`
   - [Structured Data]
   - Open Graph Meta Tags
-- Google Analytics
 
 ## 开始使用
 
@@ -80,7 +78,7 @@ permalink: post/:title/
 
 Licensed under [MIT](LICENSE).
 
-[build-img]: https://img.shields.io/travis-ci/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
+[build-img]: https://img.shields.io/travis/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
 [release-img]: https://img.shields.io/github/release/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
 [license-img]: https://img.shields.io/github/license/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
 

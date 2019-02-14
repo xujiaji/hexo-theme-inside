@@ -88,23 +88,23 @@ describe('utils', () => {
 
   it('parseToc()', () => {
     const cnt1 = `
-      <h1 a="a" id="title-1" b="b"><a></a>title 1</h1>
+      <h1 a="a" id="title-1" b="b"><a></a>title 1<a></a></h1>
       content
-      <h2 a="a" id="title-1-1" b="b"><a></a>title 1.1</h2>
+      <h2 a="a" id="title-1-1" b="b"><a></a>title 1.1<a></a></h2>
       content
-      <h3 a="a" id="title-1-1-1" b="b"><a></a>title 1.1.1</h3>
+      <h3 a="a" id="title-1-1-1" b="b"><a></a>title 1.1.1<a></a></h3>
       content
-      <h4 a="a" id="title-1-1-1-1" b="b"><a></a>title 1.1.1.1</h4>
+      <h4 a="a" id="title-1-1-1-1" b="b"><a></a>title 1.1.1.1<a></a></h4>
       content
-      <h5 a="a" id="title-1-1-1-1-1" b="b"><a></a>title 1.1.1.1.1</h5>
+      <h5 a="a" id="title-1-1-1-1-1" b="b"><a></a>title 1.1.1.1.1<a></a></h5>
       content
-      <h1 a="a" id="title-2" b="b"><a></a>title 2</h1>
+      <h1 a="a" id="title-2" b="b"><a></a>title 2<a></a></h1>
       content
     `;
     const cnt2 = `
-      <h1 a="a" id="title-1" b="b"><a></a>title 1</h1>
+      <h1 a="a" id="title-1" b="b"><a></a>title 1<a></a></h1>
       content
-      <h3 a="a" id="title-1-1-1" b="b"><a></a>title 1.1.1</h1>
+      <h3 a="a" id="title-1-1-1" b="b"><a></a>title 1.1.1<a></a></h1>
       content
     `;
 
@@ -151,10 +151,30 @@ describe('utils', () => {
       e: { a: 1 }
     });
 
-    const schemaOneOf = { a: { oneOf: [{ type: 'number' }, { enum: [false, 'a'] }] } };
+    const schemaOneOf = {
+      a: {
+        oneOf: [
+          { type: 'number' },
+          { enum: [false, 'a'] },
+          { type: 'array', items: { enum: [1, 2, 3], required: true } },
+        ]
+      }
+    };
     expect(validateSchema(schemaOneOf, { a: 1 })).toEqual({ a: 1 });
     expect(validateSchema(schemaOneOf, { a: false })).toEqual({ a: false });
     expect(validateSchema(schemaOneOf, { a: 'a' })).toEqual({ a: 'a' });
+    expect(validateSchema(schemaOneOf, { a: [1, 'a'] })).toEqual({ a: [1] });
+
+    const schemaOneOf2 = {
+      a: {
+        oneOf: [
+          { type: 'string' },
+          { type: 'array', items: { type: 'string' } },
+        ]
+      }
+    };
+    expect(validateSchema(schemaOneOf2, { a: 'a' })).toEqual({ a: 'a' });
+    expect(validateSchema(schemaOneOf2, { a: ['a', 'b', 1, {}] })).toEqual({ a: ['a', 'b'] });
 
     const schemaArray = { a: { type: 'array', items: { type: { a: { type: 'number' }, b: { type: 'string' } } } } };
     expect(validateSchema(schemaArray, { a: [{ a: 1, b: 'b' }] })).toEqual({ a: [{ a: 1, b: 'b' }] })
@@ -173,22 +193,22 @@ describe('utils', () => {
   it('jsParser()', () => {
     expect(parseJs()).toBe('');
     expect(parseJs({})).toBe('');
-    expect(parseJs(`const foo = 1; // foo`)).toBe('"use strict";var foo=1;');
+    expect(parseJs(`const foo = 1; // foo`)).toBe('var foo=1;');
     expect(parseJs(`(function() {
                        const foo = 1; // foo
-                    })();`)).toBe('"use strict";');
+                    })();`)).toBe('');
   });
 
   it('snippet()', () => {
     expect(snippet('')).toBe('');
 
     expect(snippet('alert(1)'))
-      .toBe('<div class="is-snippet"><script>"use strict";alert(1);</script></div>');
+      .toBe('<div class="is-snippet"><script>alert(1);</script></div>');
 
     expect(snippet('', 'whatever here')).toBe('<div class="is-snippet">whatever here</div>');
 
     expect(snippet('alert(1)', code => `<foo>${code}</foo>`))
-      .toBe('<div class="is-snippet"><foo>"use strict";alert(1);</foo></div>');
+      .toBe('<div class="is-snippet"><foo>alert(1);</foo></div>');
   });
 
 });
