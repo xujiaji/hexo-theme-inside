@@ -47,8 +47,8 @@ sns:
   # `feed` will fallback to `hexo.config.feed.path` if not specified
   feed:
   github: https://github.com/xujiaji
-  twitter:
-  facebook:
+  twitter: https://twitter.com/xujiaji
+  facebook: https://www.facebook.com/xujiaji
   google+:
   instagram:
   tumblr:
@@ -60,7 +60,7 @@ sns:
   pinterest:
   soundcloud:
   myspace:
-  weibo:
+  weibo: https://weibo.com/jiajixu
   qq: 26323405
 
 # Sidebar footer
