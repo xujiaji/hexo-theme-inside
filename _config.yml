@@ -9,7 +9,7 @@ appearance:
 
   # Set background
   # background: '#f5f7fa'
-  background: '//www.toptal.com/designers/subtlepatterns/patterns/confectionary.png #f5f7fa'
+  background: '//xujiaji.oss-cn-beijing.aliyuncs.com/blog/confectionary.png #f5f7fa'
   # background: 'url(//www.toptal.com/designers/subtlepatterns/patterns/confectionary.png) #f5f7fa'
 
   # background can be an array, in which case, the second value
@@ -28,7 +28,7 @@ profile:
   email: jiajixu@qq.com
 
   # Avatar URL, email address will be used for gravatar(https://en.gravatar.com) avatar if not specified.
-  # avatar:
+  avatar: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/avatar.jpeg
 
   bio: your future starts right here, right now, not tomorrow
 
@@ -226,7 +226,7 @@ data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
 # data_dir: api
 
 # Favicon, default to `favicon.ico`
-# favicon: favicon.ico
+favicon: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/favicon.ico
 
 # Google analytics
 ga: UA-117088783-1
@@ -279,10 +279,10 @@ pwa:
     theme_color: '#ffffcc'
     background_color: '#ffffcc'
     icons:
-      - src: image/icon-194x194.png
+      - src: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/icon-194x194.png
         sizes: 194x194 512x512
         type: image/png
-      - src: image/icon-144x144.png
+      - src: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/icon-144x144.png
         sizes: 144x144
         type: image/png
 
