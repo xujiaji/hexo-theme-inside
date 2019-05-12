@@ -22,6 +22,28 @@ appearance:
   # Maximum width of content
   content_width: 690
 
+  # Fonts
+  font:
+    # Url of font css file
+    # Below is a built-in font set containing Baloo Bhaijaan, Josefin Sans,
+    # Montserrat and Inconsolata from Google Fonts.
+    # Please feel free to replace it with your own css file
+    url: //unpkg.com/hexo-theme-inside@2.1.0-beta.2/source/fonts.b9b22ef890c930ac7a13.css
+
+    # Base font which applied to <body>
+    base: "'Josefin Sans', 'PingFang SC', Microsoft YaHei"
+    # Sidebar author name, fallback to `base`
+    logo:
+    # Sidebar menu font, fallback to `base`
+    menu: 'Baloo Bhaijaan'
+    # Percentage on the fab button, month text on archives page, count, pager, toc index and category pill,
+    # fallback to `base`
+    label: Montserrat
+    # Headlines(h1, h2, h3, h4, h5, h6), fallback to `base`
+    heading:
+    # <code> and code block, fallback to `base`
+    code: Inconsolata, Consolas, Menlo, Courier
+
 # Sidebar profile
 profile:
   # `email` will fallback to `hexo.config.email` if not specified
@@ -121,6 +143,53 @@ tag:
 category:
   per_page: 10
 
+# Search
+search:
+  # Display a quick search button in fab
+  # fab: true
+
+  # Render a standalone searh page which can be configured in sidebar menu such as `Search: /search`
+  # page: true
+
+  # Local search
+  # adapter:
+  #   range:
+  #     - post
+  #     - page
+  #   per_page: 20
+  #   limit: 10000
+
+  # Custom search
+  # adapter:
+  #   # Used for pagination
+  #   per_page: 10
+  #   # Optional
+  #   logo: //cdn.worldvectorlogo.com/logos/algolia.svg
+  #   request:
+  #     url: https://APPLICATION_ID-dsn.algolia.net/1/indexes/INDEX/query
+  #     method: post
+  #     # Available variables: :query, :per_page, :current
+  #     body: query=:query&hitsPerPage=:per_page&page=:current
+  #     headers:
+  #       X-Algolia-API-Key: API_KEY
+  #       X-Algolia-Application-Id: APPLICATION_ID
+  #       Content-Type: application/json; charset=UTF-8
+  #   keys:
+  #     # Used to retrieve result list
+  #     data: hits
+  #     # Used to retrieve current page number
+  #     current: page
+  #     # Used to retrieve total page number
+  #     total: nbPage
+  #     # Used to retrieve total hits number
+  #     hits: nbHits
+  #     # Used to retrieve cost time
+  #     time: processingTimeMS
+  #     # Used to retrieve title from per hit
+  #     title: _snippetResult.title.value
+  #     # Used to retrieve content from per hit
+  #     content: _snippetResult.content.value
+
 
 # ---------------------------------------------------------------
 # Content addons
@@ -160,17 +229,9 @@ reward:
       qrcode: https://raw.githubusercontent.com/xujiaji/xujiaji.github.io/pictures/blog/pay/payme_by_alipay.png
       url: https://qr.alipay.com/fkx06348pd0xuzagubxd91e
       text: Click Me
-  #   - name: paypal
-  #     qrcode:
-  #     url:
-  #     text:
-  #   - name: bitcoin
-  #     qrcode:
-  #     url:
-  #     text:
 
 # Copyright notice
-# You can also use front matter `copyright` to override this setting.
+# It is possible to use front matter `copyright` to override this setting.
 copyright:
   # Display author, default to `true`
   author: true
@@ -196,11 +257,11 @@ copyright:
 # for other comment system, see plugins
 comments:
   # disqus:
-    # shortname: disqus_shortname
-    # Or you can set disqus script URL directly
-    # script: //disqus_shortname.disqus.com/embed.js
-    # Autoload, default to `true`, set to `false` to display a button
-    # autoload: false
+  #   shortname: disqus_shortname
+  #   # Or you can set disqus script URL directly
+  #   script: //disqus_shortname.disqus.com/embed.js
+  #   # Autoload, default to `true`, set to `false` to display a button
+  #   autoload: false
 
   livere:
     uid: MTAyMC80MTc5MS8xODMzNw
@@ -223,7 +284,7 @@ comments:
 # data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
 
 # Folder where json file will be generated to, default to 'api'
-# data_dir: api
+data_dir:
 
 # Favicon, default to `favicon.ico`
 favicon: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/favicon.ico
@@ -242,34 +303,34 @@ pwa:
   # libraries for adding offline support to web apps,
   # disabled by default, remove the hash to enable
   # workbox:
-    # Workbox cdn, uses google by default, below is an example of using alicdn
-    # cdn: https://g.alicdn.com/kg/workbox/3.3.0/workbox-sw.js
-    # module_path_prefix: https://g.alicdn.com/kg/workbox/3.3.0/
-    # Expire time in hour, 4 by default, set to 0 to be permanent,
-    # caches will be forcibly deleted the next time the site is updated.
-    # expire: 4
-    # The worker script name, `sw.js` by default
-    # name: sw.js
-    # Custom rules
-    # rules:
-    #   - name: jsdelivr
-    #     strategy: staleWhileRevalidate
-    #     regex: https://cdn\\.jsdelivr\\.net
-    #   - name: gtm
-    #     strategy: staleWhileRevalidate
-    #     regex: https://www\\.googletagmanager\\.com\?id=.*
-    #   - name: gravatar
-    #     strategy: staleWhileRevalidate
-    #     regex: https://www\\.gravatar\\.com
-    #   - name: theme
-    #     strategy: staleWhileRevalidate
-    #     regex: /.*\\.(?:js|css|woff2|png|jpg|gif)$
-    #   - name: cdn
-    #     strategy: staleWhileRevalidate
-    #     regex: https://cdn\\.yourdomain\\.com
-    #   - name: json
-    #     strategy: cacheFirst
-    #     regex: your_data_prefix/.*\\.json
+  #   # Workbox cdn, uses google by default, below is an example of using alicdn
+  #   cdn: https://g.alicdn.com/kg/workbox/3.3.0/workbox-sw.js
+  #   module_path_prefix: https://g.alicdn.com/kg/workbox/3.3.0/
+  #   # Expire time in hour, 4 by default, set to 0 to be permanent,
+  #   # caches will be forcibly deleted the next time the site is updated.
+  #   expire: 4
+  #   # The worker script name, `sw.js` by default
+  #   name: sw.js
+  #   # Custom rules
+  #   rules:
+  #     - name: jsdelivr
+  #       strategy: staleWhileRevalidate
+  #       regex: https://cdn\\.jsdelivr\\.net
+  #     - name: gtm
+  #       strategy: staleWhileRevalidate
+  #       regex: https://www\\.googletagmanager\\.com\?id=.*
+  #     - name: gravatar
+  #       strategy: staleWhileRevalidate
+  #       regex: https://www\\.gravatar\\.com
+  #     - name: theme
+  #       strategy: staleWhileRevalidate
+  #       regex: /.*\\.(?:js|css|woff2|png|jpg|gif)$
+  #     - name: cdn
+  #       strategy: staleWhileRevalidate
+  #       regex: https://cdn\\.yourdomain\\.com
+  #     - name: json
+  #       strategy: cacheFirst
+  #       regex: your_data_prefix/.*\\.json
 
   # manifest.json
   manifest:
