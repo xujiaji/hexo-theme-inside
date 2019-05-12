@@ -57,8 +57,9 @@ profile:
 # Sidebar menu
 menu:
   Home: /
-  About: /about
   Links: /links
+  About: /about
+  Search: /search
   # Github: https://github.com/xujiaji
 
 # Sidebar social media
@@ -83,7 +84,7 @@ sns:
   soundcloud:
   myspace:
   weibo: https://weibo.com/jiajixu
-  qq: 26323405
+  qq: https://wpa.qq.com/msgrd?v=3&uin=26323405&site=qq&menu=yes
 
 # Sidebar footer
 footer:
@@ -146,18 +147,18 @@ category:
 # Search
 search:
   # Display a quick search button in fab
-  # fab: true
+  fab: true
 
   # Render a standalone searh page which can be configured in sidebar menu such as `Search: /search`
-  # page: true
+  page: true
 
   # Local search
-  # adapter:
-  #   range:
-  #     - post
-  #     - page
-  #   per_page: 20
-  #   limit: 10000
+  adapter:
+    range:
+      - post
+      - page
+    per_page: 20
+    limit: 10000
 
   # Custom search
   # adapter:
