@@ -1,6 +1,6 @@
 # Inside
 
-[![build-img]]() [![release-img]][releases] [![license-img]](LICENSE)
+[![build-img]][travis] [![release-img]][releases] [![license-img]](LICENSE)
 
 ❤️ SPA, flat and clean theme for [Hexo].
 
@@ -21,18 +21,14 @@
 ## 特色
 
 - SPA built with [angular]
-- 自定义色调、背景、字体
-- 可嵌套的 page 路由
-- 多语言 (i18n)
-  - :cn: Simplified Chinese & Traditional Chinese
-  - :us: English
-  - :jp: Japanese
+- 自定义色调、背景、字体、暗色主题
+- 自定义代码语法高亮
+- 可嵌套 page 路由
 - 评论
   - [Disqus]
   - [LiveRe]
   - 以插件的形式支持大多数评论系统
 - 搜索
-- 文章图片 CDN 设置
 - 增强的文章展示
   - 缩略图
   - 首字下沉
@@ -42,14 +38,13 @@
   - 版权声明
   - 打赏
 - [PWA]
-  - 动态更新的 `theme-color` meta 标签（通过提取缩略图像素值）
+  - 沉浸式设计（限安卓手机 Chrome）
   - [manifest.json]
   - 离线支持 ([workbox])
 - SEO
-  - canonical link
   - 内置 `sitemap.xml`
   - [Structured Data]
-  - Open Graph Meta Tags
+- 打印友好
 
 ## 开始使用
 
@@ -58,13 +53,11 @@
 2\. 配置 `HEXO/_config.yml` 如下：
 
 ```yml
-language: zh-Hans
-# language: zh-Hant
 permalink: post/:title/
 theme: inside
 ```
 
-3\. 主题配置见 [inside/_config.yml](_config.yml)，详细说明见[这里](https://blog.oniuo.com/post/inside-theme-configuration)。
+3\. 主题配置请参阅 [documentation]。
 
 ## 浏览器支持
 
@@ -78,9 +71,9 @@ theme: inside
 
 Licensed under [MIT](LICENSE).
 
-[build-img]: https://img.shields.io/travis/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
-[release-img]: https://img.shields.io/github/release/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
-[license-img]: https://img.shields.io/github/license/elmorec/hexo-theme-inside.svg?longCache=true&style=flat-square
+[build-img]: https://img.shields.io/travis/ikeq/hexo-theme-inside.svg?longCache=true&style=flat-square
+[release-img]: https://img.shields.io/github/release/ikeq/hexo-theme-inside.svg?longCache=true&style=flat-square
+[license-img]: https://img.shields.io/github/license/ikeq/hexo-theme-inside.svg?longCache=true&style=flat-square
 
 [angular]: https://angular.io
 [hexo]: https://hexo.io/
@@ -90,4 +83,6 @@ Licensed under [MIT](LICENSE).
 [Structured Data]: https://developers.google.com/search/docs/guides/intro-structured-data
 [disqus]: https://disqus.com
 [livere]: https://livere.com
-[releases]: https://github.com/elmorec/hexo-theme-inside/releases
+[releases]: https://github.com/ikeq/hexo-theme-inside/releases
+[travis]: https://travis-ci.org/ikeq/hexo-theme-inside
+[documentation]: https://blog.oniuo.com/theme-inside
