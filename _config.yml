@@ -4,24 +4,22 @@
 
 # Appearance
 appearance:
-  # Accent color
+  # Accent color, default '#2a2b33'
   accent_color: '#895229'
-
-  # Set background
-  # background: '#f5f7fa'
+  # Font color, default '#363636'
+  foreground_color: '#000'
+  # Border color, default '#e0e0e0'
+  border_color:
+  # body background, default '#f5f7fa'
   background: '//xujiaji.oss-cn-beijing.aliyuncs.com/blog/board.jpg #f5f7fa'
-  # background: 'url(//www.toptal.com/designers/subtlepatterns/patterns/confectionary.png) #f5f7fa'
+  # Sidebar background (when opened), default to accent_color
+  sidebar_background:
+  # Card background, default '#fff'
+  card_background: '//xujiaji.oss-cn-beijing.aliyuncs.com/blog/concrete.png #000'
 
-  # background can be an array, in which case, the second value
-  # is used as the background when the sidebar is open, default to accent_color,
-  # for the best appearance, Keep its accent consistent with accent_color
-  # background:
-  #   - 'url(//www.toptal.com/designers/subtlepatterns/patterns/confectionary.png) #f5f7fa'
-  #   - '#ff0000'
-
-  # You can also set only the background when the sidebar is open.
-  # background:
-  #   - '#2a2b33'
+  # All background settings above support image, e.g.,
+  # '//www.toptal.com/designers/subtlepatterns/patterns/confectionary.png #f5f7fa' or
+  # 'url(//www.toptal.com/designers/subtlepatterns/patterns/confectionary.png) #f5f7fa'
 
   # Maximum width of content
   content_width: 690
@@ -30,12 +28,12 @@ appearance:
   font:
     # Url of font css file
     # Below is a font set containing Baloo Bhaijaan, Josefin Sans, Montserrat and Inconsolata from Google Fonts.
-    url: //fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat
+    url: //fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat|Lobster
 
     # Base font which applied to body
     base: "'Josefin Sans', 'PingFang SC'"
     # Sidebar author font, fallback to `base`
-    logo:
+    logo: 'Lobster'
     # Sidebar menu font, fallback to `base`
     menu: 'Baloo Bhaijaan'
     # Font for:
@@ -51,12 +49,14 @@ appearance:
     heading:
     # Code and code block
     code: Inconsolata, monospace
+    # Base font for printing which applied to body
+    print:
 
   # Code Syntax Highlighting
   # Uses an architecture called "base16" (https://github.com/chriskempson/base16),
   # the default theme is a customized Atelier Dune Light theme,
   # please feel free to explore more.
-  highlight:
+  # highlight:
 
   # Default Light by Chris Kempson (http://chriskempson.com)
   # highlight: [
@@ -75,19 +75,12 @@ appearance:
   # ]
 
   # Tomorrow Night by Chris Kempson (http://chriskempson.com)
-  # highlight: [
-  #   '#1d1f21', '#282a2e', '#373b41', '#969896',
-  #   '#b4b7b4', '#c5c8c6', '#e0e0e0', '#ffffff',
-  #   '#cc6666', '#de935f', '#f0c674', '#b5bd68',
-  #   '#8abeb7', '#81a2be', '#b294bb', '#a3685a'
-  # ]
-
-  # Mode
-  # Specify `dark` to apply a built-in dark mode,
-  # or fully custom colors: `[foreground color, card background, border-color]`
-  # Note, the middle value can be any valid css background value
-  # `mode: dark` is equivalent to `mode: ['#d8d8d8', '#252525', '#444']`
-  mode: ['#000', 'https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/concrete.png', '#fff']
+  highlight: [
+    '#1d1f21', '#282a2e', '#373b41', '#969896',
+    '#b4b7b4', '#c5c8c6', '#e0e0e0', '#ffffff',
+    '#cc6666', '#de935f', '#f0c674', '#b5bd68',
+    '#8abeb7', '#81a2be', '#b294bb', '#a3685a'
+  ]
 
 # Sidebar profile
 profile:
@@ -324,12 +317,12 @@ comments:
 # ---------------------------------------------------------------
 
 # URL prefix for theme statics
-static_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics
+# static_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics
 
 # URL prefix for json data
 # If your json file is put in a cdn server,
 # set data_prefix as '//cdn.com/path/to/path/your_json_dir' and data_dir as 'your_json_dir'
-data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
+# data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
 
 # Folder where json file will be generated to, default to 'api'
 data_dir:
@@ -404,7 +397,7 @@ pwa:
 # ```
 # plugins:
 #   # Dynamic inject html snippet
-#   - position: # `sidebar` | `post` | `page` | `comments`, can be an array
+#   - position: # `sidebar` | `post` | `page` | `comments` | `avatar`, can be an array
 
 #     # HTML code
 #     template: |
