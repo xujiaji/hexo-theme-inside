@@ -18,6 +18,7 @@ reward:
   wechat: 微信
   alipay: 支
   bitcoin: Bitcoin
+  alired: 红
 
 comments:
   load: 加载 %s

@@ -254,7 +254,7 @@ toc:
 # Reward
 reward:
   # Text which shows at the top.
-  text: Buy me a cup of tea 🍵. ︿(￣︶￣)︿
+  text: Buy me a cup of coffee ☕.
 
   # Payment Methods
   #  - qrcode: url of the qrcode image
@@ -262,6 +262,8 @@ reward:
   #    text: link text of the url
   # qrcode and url must be set at least one
   methods:
+    - name: alired
+      qrcode: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/pay/ali_red.png
     - name: wechat
       qrcode: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/pay/payme_by_weixin.png
   #     url:
@@ -317,12 +319,12 @@ comments:
 # ---------------------------------------------------------------
 
 # URL prefix for theme statics
-# static_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics
+static_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics
 
 # URL prefix for json data
 # If your json file is put in a cdn server,
 # set data_prefix as '//cdn.com/path/to/path/your_json_dir' and data_dir as 'your_json_dir'
-# data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
+data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
 
 # Folder where json file will be generated to, default to 'api'
 data_dir:
