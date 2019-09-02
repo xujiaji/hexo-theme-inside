@@ -87,7 +87,7 @@ profile:
 
   # `email` is used for gravatar(https://en.gravatar.com),
   # fallback to `hexo.config.email` if not specified
-  email: jiajixu@qq.com
+  email: blog@xujiaji.com
 
   # You can set Avatar URL directly
   avatar: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/avatar.jpeg
