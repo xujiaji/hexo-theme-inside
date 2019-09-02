@@ -257,21 +257,23 @@ reward:
   text: Buy me a cup of coffee ☕.
 
   # Payment Methods
-  #  - qrcode: url of the qrcode image
-  #    url: link of the payment
-  #    text: link text of the url
-  # qrcode and url must be set at least one
+  # qrcode, url and text must be set at least one
+  # wechat, alipay, paypal and bitcoin has a built-in icon,
+  # use `name` to apply
   methods:
     - name: alired
       qrcode: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/pay/ali_red.png
+      text: 这是一个支付宝红包二维码
+      color: '#e50535'
     - name: wechat
       qrcode: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/pay/payme_by_weixin.png
-  #     url:
-  #     text:
+      text: 这是一个微信收款二维码
+      color: '#09bb07'
     - name: alipay
       qrcode: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/pay/payme_by_alipay.png
       url: https://qr.alipay.com/fkx06348pd0xuzagubxd91e
-      text: Click Me
+      text: 点我可以跳转到支付宝支付
+      color: '#4dade9'
 
 # Copyright notice
 # It is possible to use front matter `copyright` to override this setting.
@@ -319,12 +321,12 @@ comments:
 # ---------------------------------------------------------------
 
 # URL prefix for theme statics
-static_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics
+# static_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics
 
 # URL prefix for json data
 # If your json file is put in a cdn server,
 # set data_prefix as '//cdn.com/path/to/path/your_json_dir' and data_dir as 'your_json_dir'
-data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
+# data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
 
 # Folder where json file will be generated to, default to 'api'
 data_dir:
