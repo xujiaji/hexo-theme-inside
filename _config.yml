@@ -11,11 +11,11 @@ appearance:
   # Border color, default '#e0e0e0'
   border_color:
   # body background, default '#f5f7fa'
-  background: '//xujiaji.oss-cn-beijing.aliyuncs.com/blog/board.jpg #f5f7fa'
+  background: '//xujiaji.oss-cn-beijing.aliyuncs.com/blog/line.png #f5f7fa'
   # Sidebar background (when opened), default to accent_color
   sidebar_background:
   # Card background, default '#fff'
-  card_background: '//xujiaji.oss-cn-beijing.aliyuncs.com/blog/concrete.png #000'
+  card_background: '#fff'
 
   # All background settings above support image, e.g.,
   # '//www.toptal.com/designers/subtlepatterns/patterns/confectionary.png #f5f7fa' or
@@ -28,7 +28,8 @@ appearance:
   font:
     # Url of font css file
     # Below is a font set containing Baloo Bhaijaan, Josefin Sans, Montserrat and Inconsolata from Google Fonts.
-    url: //fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat|Lobster
+    # url: //fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat|Lobster
+    url: //xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics/font/css.css
 
     # Base font which applied to body
     base: "'Josefin Sans', 'PingFang SC'"
@@ -67,20 +68,20 @@ appearance:
   # ]
 
   # Harmonic16 Light by Jannik Siebert (https://github.com/janniks)
-  # highlight: [
-  #   '#f7f9fb', '#e5ebf1', '#cbd6e2', '#aabcce',
-  #   '#627e99', '#405c79', '#223b54', '#0b1c2c',
-  #   '#bf8b56', '#bfbf56', '#8bbf56', '#56bf8b',
-  #   '#568bbf', '#8b56bf', '#bf568b', '#bf5656'
-  # ]
+  highlight: [
+    '#f7f9fb', '#e5ebf1', '#cbd6e2', '#aabcce',
+    '#627e99', '#405c79', '#223b54', '#0b1c2c',
+    '#bf8b56', '#bfbf56', '#8bbf56', '#56bf8b',
+    '#568bbf', '#8b56bf', '#bf568b', '#bf5656'
+  ]
 
   # Tomorrow Night by Chris Kempson (http://chriskempson.com)
-  highlight: [
-    '#1d1f21', '#282a2e', '#373b41', '#969896',
-    '#b4b7b4', '#c5c8c6', '#e0e0e0', '#ffffff',
-    '#cc6666', '#de935f', '#f0c674', '#b5bd68',
-    '#8abeb7', '#81a2be', '#b294bb', '#a3685a'
-  ]
+  # highlight: [
+  #   '#1d1f21', '#282a2e', '#373b41', '#969896',
+  #   '#b4b7b4', '#c5c8c6', '#e0e0e0', '#ffffff',
+  #   '#cc6666', '#de935f', '#f0c674', '#b5bd68',
+  #   '#8abeb7', '#81a2be', '#b294bb', '#a3685a'
+  # ]
 
 # Sidebar profile
 profile:
@@ -321,12 +322,12 @@ comments:
 # ---------------------------------------------------------------
 
 # URL prefix for theme statics
-# static_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics
+static_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics
 
 # URL prefix for json data
 # If your json file is put in a cdn server,
 # set data_prefix as '//cdn.com/path/to/path/your_json_dir' and data_dir as 'your_json_dir'
-# data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
+data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
 
 # Folder where json file will be generated to, default to 'api'
 data_dir:
@@ -451,3 +452,11 @@ pwa:
 #         }
 #     # Or a path relative to theme folder
 #     code: snippets/mycss.css
+# plugins:
+#   - position: sidebar
+#     template: |
+#       <ins class="adsbygoogle"
+#           style="display:inline-block;width:250px;height:250px"
+#           data-ad-client="ca-pub-5903158866837527"
+#           data-ad-slot=""></ins>
+#       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
