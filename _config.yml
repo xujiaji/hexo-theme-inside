@@ -11,7 +11,7 @@ appearance:
   # Border color, default '#e0e0e0'
   border_color:
   # body background, default '#f5f7fa'
-  background: '//xujiaji.oss-cn-beijing.aliyuncs.com/blog/line.png #f5f7fa'
+  background: '//xujiaji.oss-accelerate.aliyuncs.com/blog/line.png #f5f7fa'
   # Sidebar background (when opened), default to accent_color
   sidebar_background:
   # Card background, default '#fff'
@@ -29,7 +29,7 @@ appearance:
     # Url of font css file
     # Below is a font set containing Baloo Bhaijaan, Josefin Sans, Montserrat and Inconsolata from Google Fonts.
     # url: //fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat|Lobster
-    url: //xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics/font/css.css
+    url: //xujiaji.oss-accelerate.aliyuncs.com/blog/statics/font/css.css
 
     # Base font which applied to body
     base: "'Josefin Sans', 'PingFang SC'"
@@ -241,7 +241,7 @@ search:
 # `![cat](images/cat.gif)` will convert to
 # <img src="https://cdn.example.com/images/cat.gif?m=webp&q=80" alt="cat">
 assets:
-  prefix: 'https://xujiaji.oss-cn-beijing.aliyuncs.com'
+  prefix: 'https://xujiaji.oss-accelerate.aliyuncs.com'
   suffix: ''
 
 # Table of content, enabled by default, set to `false` to disable.
