@@ -91,7 +91,7 @@ profile:
   email: blog@xujiaji.com
 
   # You can set Avatar URL directly
-  avatar: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/avatar.jpeg
+  avatar: https://xujiaji.oss-accelerate.aliyuncs.com/blog/avatar.jpeg
 
   bio: your future starts right here, right now, not tomorrow
 
@@ -263,15 +263,15 @@ reward:
   # use `name` to apply
   methods:
     - name: alired
-      qrcode: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/pay/ali_red.png
+      qrcode: https://xujiaji.oss-accelerate.aliyuncs.com/blog/pay/ali_red.png
       text: 这是一个支付宝红包二维码
       color: '#e50535'
     - name: wechat
-      qrcode: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/pay/payme_by_weixin.png
+      qrcode: https://xujiaji.oss-accelerate.aliyuncs.com/blog/pay/payme_by_weixin.png
       text: 这是一个微信收款二维码
       color: '#09bb07'
     - name: alipay
-      qrcode: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/pay/payme_by_alipay.png
+      qrcode: https://xujiaji.oss-accelerate.aliyuncs.com/blog/pay/payme_by_alipay.png
       url: https://qr.alipay.com/fkx06348pd0xuzagubxd91e
       text: 点我可以跳转到支付宝支付
       color: '#4dade9'
@@ -322,18 +322,18 @@ comments:
 # ---------------------------------------------------------------
 
 # URL prefix for theme statics
-static_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/statics
+static_prefix: https://xujiaji.oss-accelerate.aliyuncs.com/blog/statics
 
 # URL prefix for json data
 # If your json file is put in a cdn server,
 # set data_prefix as '//cdn.com/path/to/path/your_json_dir' and data_dir as 'your_json_dir'
-data_prefix: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/api
+data_prefix: https://xujiaji.oss-accelerate.aliyuncs.com/blog/api
 
 # Folder where json file will be generated to, default to 'api'
 data_dir:
 
 # Favicon, default to `favicon.ico`
-favicon: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/favicon.ico
+favicon: xujiaji.oss-accelerate.aliyuncs.com/blog/favicon.ico
 
 # Google analytics
 ga: UA-117088783-1
@@ -386,10 +386,10 @@ pwa:
     theme_color: '#ffffcc'
     background_color: '#ffffcc'
     icons:
-      - src: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/icon-194x194.png
+      - src: https://xujiaji.oss-accelerate.aliyuncs.com/blog/icon-194x194.png
         sizes: 194x194 512x512
         type: image/png
-      - src: https://xujiaji.oss-cn-beijing.aliyuncs.com/blog/icon-144x144.png
+      - src: https://xujiaji.oss-accelerate.aliyuncs.com/blog/icon-144x144.png
         sizes: 144x144
         type: image/png
 
