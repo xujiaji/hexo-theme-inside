@@ -452,7 +452,23 @@ pwa:
 #         }
 #     # Or a path relative to theme folder
 #     code: snippets/mycss.css
-# plugins:
+plugins:
+  - position: post
+    template: |
+      <script>
+        (function(){
+          var bp = document.createElement('script');
+          var curProtocol = window.location.protocol.split(':')[0];
+          if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+          }
+          else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+          }
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(bp, s);
+        })();
+      </script>
 #   - position: sidebar
 #     template: |
 #       <ins class="adsbygoogle"
