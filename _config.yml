@@ -453,7 +453,8 @@ pwa:
 #     # Or a path relative to theme folder
 #     code: snippets/mycss.css
 plugins:
-  - position: post
+  # `sidebar` | `post` | `page` | `comments` | `avatar`, 支持数组
+  - position: [post, page, sidebar]
     template: |
       <script>
         (function(){
