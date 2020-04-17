@@ -15,7 +15,7 @@ appearance:
   # Sidebar background (when opened), default to accent_color
   sidebar_background:
   # Card background, default '#fff'
-  card_background: '#fff'
+  card_background: '//xujiaji.oss-accelerate.aliyuncs.com/blog/muban.png'
 
   # All background settings above support image, e.g.,
   # '//www.toptal.com/designers/subtlepatterns/patterns/confectionary.png #f5f7fa' or
@@ -459,16 +459,19 @@ plugins:
       <script>
         (function(){
           var bp = document.createElement('script');
-          var curProtocol = window.location.protocol.split(':')[0];
-          if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-          }
-          else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-          }
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
           var s = document.getElementsByTagName("script")[0];
           s.parentNode.insertBefore(bp, s);
         })();
+
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2176a9ec1c62ab7ec39e4b50a5590fda";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+
       </script>
 #   - position: sidebar
 #     template: |
