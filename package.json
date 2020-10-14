@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-inside",
-  "version": "2.4.0-beta.2",
+  "version": "2.7.0-beta.7",
   "description": "❤️ SPA, flat and clean theme for Hexo.",
   "scripts": {
     "test": "jasmine --config=test/jasmine.json"
@@ -14,20 +14,25 @@
     "hexo theme",
     "angular"
   ],
-  "author": "elmorec <elmore.c@outlook.com>",
+  "author": "ikeq <ikeq@foxmail.com>",
   "maintainers": [
-    "elmorec <elmore.c@outlook.com>"
+    "ikeq <ikeq@foxmail.com>"
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ikeq/hexo-theme-inside/issues"
   },
   "homepage": "https://github.com/ikeq/hexo-theme-inside#readme",
+  "dependencies": {
+    "markdown-it": "11.0.1",
+    "markdown-it-container": "3.0.0"
+  },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "hexo": "^3.9.0",
-    "jasmine": "^3.4.0",
-    "uglify-js": "^3.6.0"
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.7.0",
+    "cheerio": "1.0.0-rc.3",
+    "hexo": "5.1.1",
+    "jasmine": "3.6.1",
+    "terser": "4.8.0"
   }
 }
